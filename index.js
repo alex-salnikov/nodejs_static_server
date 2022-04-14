@@ -1,6 +1,6 @@
 const
 	http = require('http'),
-	fs = require('fs');
+	fs = require('fs'),
 	path = require('path'),
 	
 	port = 8125,
@@ -12,7 +12,7 @@ const
 		'.json':	'application/json',
 		'.png':	'image/png', 
 		'.jpg':	'image/jpg'
-	}
+	};
 
 http.createServer(function(request, response){
     console.log('request starting...');
